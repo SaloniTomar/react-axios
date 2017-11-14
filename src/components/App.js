@@ -12,7 +12,7 @@ class App extends Component{
         }
     }
     componentDidMount(){        
-        axios.get('https://raw.githubusercontent.com/apurvamathur1994/data/master/product.json')
+        axios.get('https://raw.githubusercontent.com/SaloniTomar/react-axios/master/characterData.json')
         .then(res => {
             const notes_added =res.data;
             this.setState({ notes_added})
